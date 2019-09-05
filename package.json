@@ -1,11 +1,13 @@
 {
   "name": "vue-lib",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "npm run serve",
+    "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue-lib --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
