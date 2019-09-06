@@ -23,5 +23,11 @@ module.exports = {
                 // 修改它的选项...
                 return options
             })
+        config
+            .plugin('html-index')
+            .tap(args => {
+                args.favicon = '/public/favicon.ico'
+                return args
+            })
     }
 }
