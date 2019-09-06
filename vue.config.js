@@ -10,6 +10,7 @@ module.exports = {
             filename: 'index.html'
         }
     },
+    css: { extract: false },
     chainWebpack: config => {
         config.resolve.alias
             .set('@', path.resolve('examples'))

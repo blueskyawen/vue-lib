@@ -1,6 +1,6 @@
 {
   "name": "vue-lib-sh",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "基于Vue的lib组件库",
   "main": "lib/vue-lib.umd.min.js",
   "keyword": "vue lib library",
