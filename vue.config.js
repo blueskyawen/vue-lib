@@ -1,6 +1,8 @@
 const path = require('path')
 
 module.exports = {
+    baseUrl: '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/vue-lib/' : '/',
     pages: {
         index: {
             entry: 'examples/main.js',
@@ -22,12 +24,6 @@ module.exports = {
             .tap(options => {
                 // 修改它的选项...
                 return options
-            })
-        config
-            .plugin('html-index')
-            .tap(args => {
-                args.favicon = '/public/favicon.ico'
-                return args
             })
     }
 }

@@ -1,13 +1,25 @@
 {
   "name": "vue-lib",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "基于Vue的lib组件库",
+  "main": "lib/vue-lib.umd.min.js",
+  "keyword": "vue lib library",
   "private": false,
+  "author": "blueskyawen",
+  "license": "MIT",
   "scripts": {
     "start": "npm run serve",
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name vue-lib --dest lib packages/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blueskyawen/vue-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/blueskyawen/vue-lib/issues"
   },
   "dependencies": {
     "core-js": "^2.6.5",
